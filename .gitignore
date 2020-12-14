@@ -1,2 +1,5 @@
-# Hidden Files and macOS thumbnails
+# Hidden Files
 .*
+
+# macOS thumbnails
+._*
