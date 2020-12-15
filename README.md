@@ -29,7 +29,7 @@ This data was first used in Bo Pang and Lillian Lee's paper in 2005.  \[1\]\[2\]
 
 
 
-## Performance Comparison
+## Performance Comparison & Conclusion
 
 So far, we have implemented Long Short-term Memory (LSTM), Naive Bayes (NB) and Support Vector Machine (SVM). The performance are provided in the following table.
 
@@ -39,11 +39,15 @@ So far, we have implemented Long Short-term Memory (LSTM), Naive Bayes (NB) and 
 | NB    | 76.20% |Feature selected based on information gain<br />Multinomial Naive Bayes model|
 | SVM   | 69.59% |Feature selected based on frequency<br />Regularization C = 1|
 
+From the table below, we could obtain that LSTM (RNN) model has the best performance on Movie Review datasets, which is 76.24%.
+
 According to Yoon Kim's paper, Convolutional Neural Network (CNN) could also be applied to movie emotion classification. Here is the performance of CNN from the paper. \[3\]
 
 | Model | Best Performance | Configuration |
 | ----- | ---------------- | ---- |
 | CNN   | 81.50% |CNN-non-static model|
+
+As far as we known, among all models fit by the same Cornell Movie Review Data sets, the CNN model has achieved the best performance (i.e. highest goodness of fit).
 
 
 
@@ -53,6 +57,7 @@ According to Yoon Kim's paper, Convolutional Neural Network (CNN) could also be 
    Since word2vec is a word vectorization model that supported well by the machine learning community. It is believed that using word2vec can help us achieve better performance.
 2. Design more deep neural network (DNN) training models in emotion classification.
    Apart from training image data, lots of DNN models can also be employed in natural language processing region.
+3. Expand datasets. Since the scale of dataset we used in this project is not large enough (5331 positive and negative each), the goodness of fit is not satisfying. It is feasible to extend the current dataset with other datasets which contains more samples and words.
 
 
 
